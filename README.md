@@ -26,11 +26,12 @@ In Recommender we can divide in following categories:
 1.	__Account security recommender__: The account security recommender prompts Google Cloud project owners to protect their account with their phone's built-in security key. If a project owner has an eligible device associated with their account and isn't using a third party Identity provider for single sign-on, a notification shows in Google Cloud console's Notifications notifications menu. The project owner can then choose to enable their phone as a security key for their account, or dismiss the notification.
 2.	__IAM recommender__: Role recommendations are one of the types of recommendations that Recommender generates. Each role recommendation suggests that you remove or replace a role that gives your principals excess permissions. At scale, these recommendations help you enforce the principle of least privilege by ensuring that principals have only the permissions that they actually need. Recommender identifies excess permissions using policy insights. Policy insights are ML-based findings about a principal's permission usage. Some recommendations are also associated with lateral movement insights. These insights identify roles that allow service accounts in one project to impersonate service accounts in another project.
 3.	__Google Maps Platform project management recommender__: The project management recommender helps you improve the health of your Google Maps Platform project. For instance, if your project doesn't have secure API keys, the recommender can help restrict these keys in order to secure your account.
-4.	__Cloud Run Service Identity recommender__: This recommender provides the following recommendations.
-            - Service account might have more permissions than are required.
-  	            - Environment variable might contain a password.
-  	      - Environment variable might contain an API key.
-  	      - Environment variable might contain Google Application Credentials.
+4. __Cloud Run Service Identity recommender__: This recommender provides the following recommendations:
+    * Service account might have more permissions than required.
+    * Environment variable might contain a password.
+    * Environment variable might contain an API key.
+    * Environment variable might contain Google Application Credentials.
+
 ## Performance Recommenders.
 1.	__Cloud SQL out-of-disk recommender__: The Cloud SQL out-of- disk recommender proactively generates recommendations that help you reduce the risk of downtime that might be caused by your instances running out of disk space. You can apply these recommendations when a Cloud SQL instance is trending toward a storage limit. 
 2.	__Managed instance group machine type recommender__: Compute Engine provides machine type recommendations for managed instance groups (MIGs) to help you improve workload performance and cost efficiency. Use these recommendations to determine whether you should resize the machine type of your instances to add or remove vCPU and memory resources.
@@ -39,9 +40,9 @@ In Recommender we can divide in following categories:
 ## Manageability Recommenders.
 1.	__Error Reporting notification recommender__: The Error Reporting recommender looks for recent crashes in your Google Cloud project and provides recommendations if you have not configured Error Reporting notifications. When you have notifications configured, no recommendations are made.
 2.	__Product suggestion recommender__: The product suggestion recommender helps you to optimize your Cloud usage by providing you with product suggestions. This can help you improve performance and security, and manage your resources better. Based on best practices, it analyzes your current product usage within each project and determines any additional products that might optimize your usage. If the recommender identifies an opportunity to leverage a product within a project, a recommendation is generated for that project in the Recommendation Hub. All users who have the appropriate permissions can view the recommendations when logged in to the hub. Every product suggestion includes information about the recommendation, details on the product, and links to help you get started with the product.
-3.	__Container diagnosis recommender (PREVIEW)__: When GKE detects that a cluster is using a Kubernetes feature or API that is deprecated and will be removed in an upcoming minor version, the following happens:
-            - Automatic upgrade to the upcoming minor version is paused. To learn more about how this works, see What happens when GKE pauses automatic upgrades.
-  	      - An insight and recommendation are generated so that you can assess and mitigate your cluster's exposure to the deprecation.
+3. __Container diagnosis recommender (PREVIEW)__:  When GKE detects that a cluster is using a Kubernetes feature or API that is deprecated and will be removed in an upcoming minor version, the following happens:
+    * Automatic upgrade to the upcoming minor version is paused. To learn more about how this works, see What happens when GKE pauses automatic upgrades.
+    * An insight and recommendation are generated so that you can assess and mitigate your cluster's exposure to the deprecation.
 Deprecation insights and recommendations are available from Recommender, a service that provides insights and recommendations for using resources on Google Cloud. For the deprecations topic with Recommender:
 •	An insight explains that your cluster uses a feature or API that is deprecated and will be removed in an upcoming minor version.
 •	A recommendation provides guidance on what to do to mitigate your cluster's exposure to the deprecation.
@@ -50,10 +51,16 @@ Deprecation insights and recommendations are available from Recommender, a servi
             - Usage insights for every project (networking, API, project owner, service activity, and more).
   	      - Recommendations to turn down projects having low usage activity.
   	      - Recommendations to assign a new owner to projects that have high usage activity but no active owner.
+1. __Unattended project recommender__: The unattended project recommender analyses usage activity on projects in your organization and provides recommendations that help you discover, reclaim or remove unattended projects. Unattended project recommender analyzes usage activity across all projects in your organization and provides you with the following features to help you discover, reclaim, and shut down unattended projects:
+  * Usage insights for every project (networking, API, project owner, service activity, and more).
+  * Recommendations to turn down projects having low usage activity.
+  * Recommendations to assign a new owner to projects that have high usage activity but no active owner.
+
 Shutting down or reclaiming unattended projects can provide the following impact and benefits to your organization:
-•	Reduction in security risks (SECURITY).
-•	Reduction in unnecessary spending (COST).
-•	Reduction in carbon footprint associated with your workloads (SUSTAINABILITY).
+  * Reduction in security risks (SECURITY).
+  * Reduction in unnecessary spending (COST).
+  * Reduction in carbon footprint associated with your workloads (SUSTAINABILITY).
+
 
 
 
