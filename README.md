@@ -47,10 +47,10 @@ Deprecation insights and recommendations are available from Recommender, a servi
 •	An insight explains that your cluster uses a feature or API that is deprecated and will be removed in an upcoming minor version.
 •	A recommendation provides guidance on what to do to mitigate your cluster's exposure to the deprecation.
 ## Sustainability Recommenders.
-1.	__Unattended project recommender__: The unattended project recommender analyses usage activity on projects in your organization and provides recommendations that help you discover, reclaim or remove unattended projects. Unattended project recommender analyzes usage activity across all projects in your organization and provides you with the following features to help you discover, reclaim, and shut down unattended projects:
-            - Usage insights for every project (networking, API, project owner, service activity, and more).
-  	      - Recommendations to turn down projects having low usage activity.
-  	      - Recommendations to assign a new owner to projects that have high usage activity but no active owner.
+1.	__Unattended project recommender__: The unattended project recommender analyses usage activity on projects in your organization and provides recommendations that help you discover, reclaim or remove unattended projects. Unattended project recommender analyzes usage activity across all projects in your organization and provides you with the following features to help you discover, reclaim, and shut down unattended projects: 
+    * Usage insights for every project (networking, API, project owner, service activity, and more).
+    * Recommendations to turn down projects having low usage activity.
+    * Recommendations to assign a new owner to projects that have high usage activity but no active owner.
 1. __Unattended project recommender__: The unattended project recommender analyses usage activity on projects in your organization and provides recommendations that help you discover, reclaim or remove unattended projects. Unattended project recommender analyzes usage activity across all projects in your organization and provides you with the following features to help you discover, reclaim, and shut down unattended projects:
   * Usage insights for every project (networking, API, project owner, service activity, and more).
   * Recommendations to turn down projects having low usage activity.
