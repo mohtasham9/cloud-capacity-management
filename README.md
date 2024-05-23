@@ -28,7 +28,7 @@ In Recommender we can divide in following categories:
 3.	__Google Maps Platform project management recommender__: The project management recommender helps you improve the health of your Google Maps Platform project. For instance, if your project doesn't have secure API keys, the recommender can help restrict these keys in order to secure your account.
 4.	__Cloud Run Service Identity recommender__: This recommender provides the following recommendations.
             - Service account might have more permissions than are required.
-  	      - Environment variable might contain a password.
+  	            - Environment variable might contain a password.
   	      - Environment variable might contain an API key.
   	      - Environment variable might contain Google Application Credentials.
 ## Performance Recommenders.
