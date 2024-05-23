@@ -1,8 +1,8 @@
-Introduction: 
+## Introduction: 
 In today’s IT organization, it’s not a question of whether or not public cloud resources are used for production applications, but which application should be deployed there. For modern digital businesses, capacity and cost management are essential to ensure adequate resources and budget, whether on-premises or in the cloud, to support new, existing, and growing business services. Nowadays most of the organizations from small scale to large scale are switching 80% of their operations to the cloud. According to Gartner, approximately 28 percent of server capacity currently goes unused, as well as 40 percent of storage. 
 Capacity management informs forecasting and planning by helping you determine the capacity levels that you’ll notice across your environment, including computing configurations, storage, database, and network bandwidth, as well as the most cost-effective way to provision them. 
 
-Recommenders: 
+## Recommenders: 
 A recommender is a service on Google Cloud that provides usage recommendations for Google Cloud resources. Recommenders are specific to a single Google Cloud product and resource type. A single product can have multiple recommenders, where each provides a different type of recommendation for a different resource.
 In Recommender we can divide in following categories:
 a.	Cost Recommenders.
@@ -10,7 +10,8 @@ b.	Security Recommenders.
 c.	Performance Recommenders.
 d.	Manageability Recommenders.
 e.	Sustainability Recommenders.
-Cost Recommenders:
+
+## Cost Recommenders:
 a.	Idle persistent disk recommender: Compute Engine provides recommendations to help you identify resources like persistent disks (PDs) that aren't used. You can use idle persistent disk recommender to help minimize waste of resources and reduce your compute bill. For PDs that are not actively used, you can create a backup snapshot then delete the resource. By taking backup and deleting the PD it Reduce the maintenance cost of that disk by 35% to 92% and Save 100% of the cost of that disk.
 b.	Idle custom image recommender: Compute Engine provides recommendations to help you identify resources like custom disk images that aren't used. You can use idle custom image recommender: to help minimize waste of resources and reduce your compute bill. For images you can delete them if you don't need them and Save 100% of the cost of that image. 
 c.	Idle IP address recommender: Compute Engine provides recommendations to help you identify resources like IP addresses that aren't used. You can use idle IP address recommender to help minimize waste of resources and reduce your compute bill. For PDs that are not actively used, you can create a backup snapshot then delete the resource. For unused PDs, images, and IP addresses, you can delete them if you don't need them. Save 100% of the cost of that IP address.
@@ -21,7 +22,7 @@ g.	Cloud SQL overprovisioned instance recommender: The Cloud SQL overprovisioned
 h.	Committed use discount recommender: The committed use discount (CUD) recommender helps you optimize the resource costs of the projects in your Cloud Billing account. Its recommendations are generated automatically based on historical usage metrics gathered by Cloud Billing. You can use these recommendations to purchase additional commitments and further optimize your Google Cloud costs. 
 •	Stable usage recommendations: Stable usage recommendations take into account the minimum stable spending or usage for your account over the last 30 days. If your projects show a trend of uncommitted usage during that period, the recommender classifies this as an opportunity to purchase committed use discounts to reduce your costs.
 •	Optimal recommendations: Optimal recommendations take into account overall historical usage, up to the most recent 30 days, including times when you exceeded the minimal stable spending or usage. These recommendations help you maximize savings associated with projects that experience periodic increases that aren't included in the stable usage calculations. When your spending or usage fluctuates over time, purchasing commitments at minimal stable usage might not give you the most cost savings. Optimal recommendations account for fluctuations in your usage and provide further cost savings.
-Security Recommenders:
+## Security Recommenders:
 a.	Account security recommender: The account security recommender prompts Google Cloud project owners to protect their account with their phone's built-in security key. If a project owner has an eligible device associated with their account and isn't using a third party Identity provider for single sign-on, a notification shows in Google Cloud console's Notifications notifications menu. The project owner can then choose to enable their phone as a security key for their account, or dismiss the notification.
 b.	IAM recommender: Role recommendations are one of the types of recommendations that Recommender generates. Each role recommendation suggests that you remove or replace a role that gives your principals excess permissions. At scale, these recommendations help you enforce the principle of least privilege by ensuring that principals have only the permissions that they actually need. Recommender identifies excess permissions using policy insights. Policy insights are ML-based findings about a principal's permission usage. Some recommendations are also associated with lateral movement insights. These insights identify roles that allow service accounts in one project to impersonate service accounts in another project.
 c.	Google Maps Platform project management recommender: The project management recommender helps you improve the health of your Google Maps Platform project. For instance, if your project doesn't have secure API keys, the recommender can help restrict these keys in order to secure your account.
@@ -30,12 +31,12 @@ d.	Cloud Run Service Identity recommender: This recommender provides the followi
 •	Environment variable might contain a password.
 •	Environment variable might contain an API key.
 •	Environment variable might contain Google Application Credentials.
-Performance Recommenders.
+## Performance Recommenders.
 a.	Cloud SQL out-of-disk recommender: The Cloud SQL out-of- disk recommender proactively generates recommendations that help you reduce the risk of downtime that might be caused by your instances running out of disk space. You can apply these recommendations when a Cloud SQL instance is trending toward a storage limit. 
 b.	Managed instance group machine type recommender: Compute Engine provides machine type recommendations for managed instance groups (MIGs) to help you improve workload performance and cost efficiency. Use these recommendations to determine whether you should resize the machine type of your instances to add or remove vCPU and memory resources.
 c.	VM machine type recommender: Compute Engine provides machine type recommendations to help you optimize the resource utilization of your virtual machine (VM) instances. These recommendations are generated automatically based on system metrics gathered by the Cloud Monitoring service over the previous 8 days. Use these recommendations to resize your instance's machine type to more efficiently use the instance's resources. This feature is also known as rightsizing recommendations.
 
-Manageability Recommenders.
+## Manageability Recommenders.
 a.	Error Reporting notification recommender: The Error Reporting recommender looks for recent crashes in your Google Cloud project and provides recommendations if you have not configured Error Reporting notifications. When you have notifications configured, no recommendations are made.
 b.	Product suggestion recommender: The product suggestion recommender helps you to optimize your Cloud usage by providing you with product suggestions. This can help you improve performance and security, and manage your resources better. Based on best practices, it analyzes your current product usage within each project and determines any additional products that might optimize your usage. If the recommender identifies an opportunity to leverage a product within a project, a recommendation is generated for that project in the Recommendation Hub. All users who have the appropriate permissions can view the recommendations when logged in to the hub. Every product suggestion includes information about the recommendation, details on the product, and links to help you get started with the product.
 c.	Container diagnosis recommender (PREVIEW): When GKE detects that a cluster is using a Kubernetes feature or API that is deprecated and will be removed in an upcoming minor version, the following happens:
@@ -44,7 +45,7 @@ c.	Container diagnosis recommender (PREVIEW): When GKE detects that a cluster is
 Deprecation insights and recommendations are available from Recommender, a service that provides insights and recommendations for using resources on Google Cloud. For the deprecations topic with Recommender:
 •	An insight explains that your cluster uses a feature or API that is deprecated and will be removed in an upcoming minor version.
 •	A recommendation provides guidance on what to do to mitigate your cluster's exposure to the deprecation.
-Sustainability Recommenders.
+## Sustainability Recommenders.
 a.	Unattended project recommender: The unattended project recommender analyses usage activity on projects in your organization and provides recommendations that help you discover, reclaim or remove unattended projects. Unattended project recommender analyzes usage activity across all projects in your organization and provides you with the following features to help you discover, reclaim, and shut down unattended projects:
 •	Usage insights for every project (networking, API, project owner, service activity, and more).
 •	Recommendations to turn down projects having low usage activity.
